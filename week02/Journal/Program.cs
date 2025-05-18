@@ -50,6 +50,7 @@ class Program()
             }
 
             Console.WriteLine("Select an option: \n 1. Write \n 2. Display \n 3. Save \n 4. Load \n 5. Quit");
+            Console.WriteLine("Write your choice: ");
             _userChoice = int.Parse(Console.ReadLine());
 
 

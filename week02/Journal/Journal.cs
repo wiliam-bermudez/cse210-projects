@@ -39,7 +39,6 @@ class Journal
 
     public void SaveToFile(string file)
     {
-
         string date = DateTime.Now.ToString("MM-dd-yyyy");
 
         using (StreamWriter outputFile = new StreamWriter(file))
