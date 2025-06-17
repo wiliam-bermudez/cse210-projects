@@ -1,0 +1,33 @@
+using System;
+
+class Swimming : Activity
+{
+    private int _laps;
+    private string _type;
+    public Swimming(DateTime date, int minutes, int laps) : base(date, minutes)
+    {
+        _laps = laps;
+        _type = "Swimming";
+    }
+    public override double GetDistance()
+    {
+        return _laps * 50.0 / 1000.0;
+
+    }
+
+    public override double GetSpeed()
+    {
+
+        return (GetDistance() / GetMinutes()) * 60;
+    }
+
+    public override double GetPace()
+    {
+
+        return GetMinutes() / GetDistance();
+    }
+    public string GetType()
+    {
+        return _type;
+    }
+}
